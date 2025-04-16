@@ -4,7 +4,7 @@ public class FAQBotHandler extends SupportHandler {
             System.out.println("[FAQBot] Handled "+issue.toLowerCase());
 
         }
-        if(supportHandler!=null){
+        else if(supportHandler!=null){
             supportHandler.handle(issue);
         }
     }

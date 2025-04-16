@@ -3,7 +3,7 @@ public class JuniorSupportHandler extends SupportHandler{
         if(issue.equalsIgnoreCase("refund_request") || issue.equalsIgnoreCase("billing_issue")){
             System.out.println("[JuniorSupport] Handled "+issue);
         }
-        if(supportHandler!=null){
+        else if(supportHandler!=null){
             supportHandler.handle(issue);
         }
     }
